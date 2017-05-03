@@ -102,5 +102,7 @@ void loop() {
   if(cmd_Vel<0)
   {digitalWrite(8,HIGH);  }
 
+  nh.spinOnce();
+  
   delay(50); //give some time to relax
 }

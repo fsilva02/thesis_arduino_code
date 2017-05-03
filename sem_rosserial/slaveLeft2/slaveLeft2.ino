@@ -23,18 +23,24 @@ void setup() {
 }
 
 void loop() {
-
-}
-
-void requestEvent() {
-
   // Create message
   String strR = String(counter);
   String strF = strR + '/';
 
   Wire.write(strF.c_str());
   Serial.println (strF);
-  counter = 0;
+  delay(500);
+}
+
+void requestEvent() {
+
+//  // Create message
+//  String strR = String(counter);
+//  String strF = strR + '/';
+//
+//  Wire.write(strF.c_str());
+//  Serial.println (strF);
+//  counter = 0;
 }
 
 void ai0() {
